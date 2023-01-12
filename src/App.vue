@@ -1,8 +1,12 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import Card from "./components/card.vue";
 </script>
 
 <template>
+  <Card color="red"  label="Bonjour">
+    Je suis une card
+  </Card>
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -19,6 +23,7 @@ import HelloWorld from './components/HelloWorld.vue'
   height: 6em;
   padding: 1.5em;
   will-change: filter;
+  display: inline-block;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
